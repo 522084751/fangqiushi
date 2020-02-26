@@ -1,0 +1,11 @@
+
+.tag-sex.data-v-16c91fab{
+	background: #007aff;
+	color: #fff;
+	font-size: 22rpx;
+	padding: 5rpx 8rpx;
+	margin-left: 10rpx;
+	border-radius: 20rpx;
+	line-height: 24rpx;
+}
+

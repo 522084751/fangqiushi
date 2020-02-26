@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ceshi/ceshi"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "仿糗事百科",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}
