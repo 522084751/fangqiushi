@@ -168,7 +168,7 @@
 		onLoad() {
 			uni.getSystemInfo({
 				success: (res) =>{
-					let height=res.windowHeight-uni.upx2px(100);
+					let height = res.screenHeight - uni.upx2px(100);
 					this.swiperheight = height;
 				}
 			});

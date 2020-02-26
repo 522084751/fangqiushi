@@ -28,7 +28,7 @@
 			return {
 				scrollTop: 0,
 				style:{
-					contentH: 800,
+					contentH: 0,
 					itemH: 0
 				},
 				list:[
@@ -63,7 +63,9 @@
 				//接口中的系统信息
 				try {
 				    const res = uni.getSystemInfoSync();
-					this.style.contentH = windowHeight - uni.upx2px(120);
+					this.style.contentH = res.screenHeight - uni.upx2px(120) - uni.upx2px(88);
+					console.log(this.style.contentH,'99999999999999');
+					console.log(res.screenHeight,'7777777777')
 				} catch (e) {
 				    // error
 				}
@@ -112,7 +114,7 @@
 				
 			submit(data){
 				// 发送逻辑
-				console.log("当前输入的是"+data);
+				// console.log("当前输入的是"+data);
 				//构建数据
 				let now=new Date().getTime();
 				let obj={
@@ -125,6 +127,7 @@
 				};
 				this.list.push(obj);
 				this.pageToBottom();
+				console.log(this.style.contentH,'99999999999999');
 			}
 		}
 	}
