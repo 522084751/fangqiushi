@@ -77,7 +77,10 @@
 					res[1].forEach((ret)=>{
 						console.log(ret, "*********************");
 						this.style.itemH += ret.height;
-					})
+					});
+					if(this.style.itemH > this.style.contentH){
+						this.scrollTop=this.style.itemH;
+					};
 				})
 			},
 			//获取聊天数据
